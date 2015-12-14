@@ -113,7 +113,7 @@ nav ul{
 
 
 .slide-two{
-    background-image: url('https://snap-photos.s3.amazonaws.com/img-thumbs/960w/UNB7V2H5L4.jpg');
+    background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1175');
 }
     
 [id^="slider"]:checked + section {
@@ -128,7 +128,7 @@ nav ul{
 
 .slide img{
     opacity: .6;
-    width: 128px;
+    width: 150px;
     height: 128px;
     margin: 2em auto;
 }
