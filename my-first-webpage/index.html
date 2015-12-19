@@ -2,7 +2,10 @@
 <html>
 <head>
     <title>Demo Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="//fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,19 +13,17 @@
         <div id="slide-Panel">
             <div class="wrap">
                 
-                
-                
                 <input id="slider-1-trigger" type="radio" value="slide1" name="slides" checked>
-                <section class="slide slide-one">
-                        <img src="globe_grid.svg">
+                <section class="slide slide-one fadeIn">
+                        <img src="svg/globe_grid.svg">
                         <h1>Web Development</h1>
                         <p>How to Build a Blog</p>
                         <a href="#">More Info</a>
                 </section>
 
                 <input id="slider-2-trigger" type="radio" value="slide2" name="slides">
-                <section class="slide slide-two">
-                        <img src="globe_grid.svg">
+                <section class="slide slide-two fadeIn">
+                        <img src="svg/globe_grid.svg">
                         <h1>Learn core skills</h1>
                         <p>Program websites in HTML, CSS and JavaScript</p>
                         <a href="#">More Info</a>
@@ -33,7 +34,7 @@
 
         <header>
 
-            <h1 class="name">WEB DEVELOPMENT &amp; ADVERTISING</h1>
+            <h1 class="name"><a href="#">WEB DEVELOPMENT &amp; <span>ADVERTISING</span></a></h1>
 
             <nav>
                 
@@ -59,22 +60,22 @@
                     <li>Contacts</li>
                     
                 </ul>
-
-                <select id="navSelect">
-                    <option>Name Select...</option>
-                    <option>Home</option>
-                    <option>About</option>
-                    <option>Testimonials</option>
-                    <option>-History</option>
-                    <option>--Lorem</option>
-                    <option>--Dolor</option>
-                    <option>--Sit amet</option>
-                    <option>-Clients</option>
-                    <option>Services</option>
-                    <option>Projects</option>
-                    <option>Contacts</option>
-                </select>
-
+                <div class="select_container ">
+                    <select id="navSelect">
+                        <option>Name Select...</option>
+                        <option>Home</option>
+                        <option>About</option>
+                        <option>Testimonials</option>
+                        <option>-History</option>
+                        <option>--Lorem</option>
+                        <option>--Dolor</option>
+                        <option>--Sit amet</option>
+                        <option>-Clients</option>
+                        <option>Services</option>
+                        <option>Projects</option>
+                        <option>Contacts</option>
+                    </select>
+                </div>
             </nav>    
 
         </header>
@@ -190,6 +191,8 @@
             <h1>WEB DEVELOPMENT &amp; ADVERTISING</h1>
             <p>copyright &copy; 2015</p>
             <a href="privacy.html">privacy policy</a>
-        </footer>    
+        </footer> 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>        
