@@ -13,17 +13,31 @@ html
 
 body{
     font-family: "PT sans",sans-serif;
+    color: #a7a7a7;
+    font: 400 15px/24px "Open Sans", sans-serif;
 }
 
+body h1,h2,h3{
+      color: #393939;
+}
 
 a{
     text-decoration: none;
 }
 
 img {
-    max-width: 90%;
+    height: auto;
+    max-width: 100%;
 }
-/*********** HEADER STYLES ************/
+
+.wrapper{
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+/******************************
+           HEADER STYLES 
+******************************/
 
 header{
     background: #0FCABF;
@@ -31,7 +45,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     align-content: center;
     padding: 1.2rem .3rem 1.8rem;
 }
@@ -44,8 +58,7 @@ nav ul{
     line-height: .5;
     text-align: center;
     width: 100%;
-    max-width: 280px;
-    margin: .8rem auto;
+    margin: .8rem auto 2rem;;
 }
 
 .name a{
@@ -53,7 +66,7 @@ nav ul{
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     line-height: 0;
     flex: 1;
     color: #fff;
@@ -69,7 +82,7 @@ nav ul{
 
 #navSelect{
     width: 100%;
-    color: #5a5a5a;
+    color: #414141;
     padding: .4rem .2rem;
     border: 0;
     background: transparent;
@@ -78,8 +91,7 @@ nav ul{
 }
  
 .select_container{
-    width: 90%;
-    max-width: 280px;
+    width: 100%;
     height: 1.3%;
     margin: 1rem auto;
    background: url('../svg/caret5.svg') no-repeat right #fff;
@@ -99,6 +111,7 @@ nav ul{
 #slide-Panel{
     width: 100%;
     height: 40%;
+    min-height: 280px;
     overflow: hidden;
 }
 
@@ -110,7 +123,6 @@ nav ul{
     text-align: center;
     overflow: hidden;
 }
-
 
 .slide{
     width: 100%;
@@ -168,11 +180,11 @@ nav ul{
     left: 0;
     transition: left .65s ease-out;
 }
-.slide :not(img){
+.slide .wrapper :not(img){
     display: none;
 }
 
-.slide img{
+.slide .wrapper img{
     opacity: .6;
     width: 220px;
     height: 148px;
@@ -184,13 +196,157 @@ nav ul{
         info styles
 ******************************/
 
+.info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 3.6rem 1rem;
+    background: ;
+}
+
+.info .wrapper{
+    width: 100%;
+}
+
 .info h1 {
-    
-}    
+    font-size: 2.2rem;
+    font-weight: bolder;
+    margin: auto;
+}
 
+.info .wrapper > p {
+   
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 100%;
+    margin-bottom: 4rem;
+}
 
+.info article{
+    text-align: left;
+}
 
+.info a{
+    color: #0FCABF;
+}
+
+.info a:hover{
+    text-decoration: underline;
+}
+
+.info li{
+    color: white;
+    font-weight: bolder;
+    margin: 1rem auto;
+    width: 100%;
+    height: 100%;
+    padding: .1rem;
+    position: relative;
+}
+
+.info li:hover::before{
+    content: "";
+    position: absolute;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #363535;
+    top: -30%;
+    left: 50%;
+    right: 0;
+    z-index: 11;
+    border-bottom-left-radius: 6%;
+}
+
+.info li:hover::after{
+    box-sizing: border-box;
+    position: absolute;
+    background: #363535;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    height: auto;
+    top: -180%;
+    right: 0;
+    bottom: 120%;
+    left: 0;
+    z-index: 10;
+    position: absolute;
+    content: attr(data-descr) " ";
+    border-radius: 5px;
+    text-align: left;
+    padding: 1rem;
+}
+.info li:nth-child(-n+2):hover::after{
+    padding: 1.6rem 1rem;
+}
+
+.info li > div{
+    padding: .1rem;
+}
+.info li div{
+    margin: .4rem 0;
+}
+
+.info li:first-child{
+    background: linear-gradient(90deg, #F3CE54 54%, rgba(0,0,0,0) 50%),
+                url("https://staticlivedemo00-templatemonster.netdna-ssl.com/wt_52537/images/progress-bg.jpg") repeat;
+}
+
+.info li:last-child{
+    background: linear-gradient(90deg, #58CEE8 87%, rgba(0,0,0,0) 50%),
+                url("https://staticlivedemo00-templatemonster.netdna-ssl.com/wt_52537/images/progress-bg.jpg") repeat;
+}
+
+.info li:nth-child(2n){
+     background: linear-gradient(90deg, #FB8B30 73%, rgba(0,0,0,0) 50%),
+                url("https://staticlivedemo00-templatemonster.netdna-ssl.com/wt_52537/images/progress-bg.jpg") repeat;
+}
 
 /******************************
-    
+            CHOOSE
 ******************************/
+ 
+.choose{
+    background: linear-gradient(90deg, rgba(13, 78, 126, 0.43) 100%, rgba(0,0,0,0) 50%),
+                url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/XC8XH37TX9.jpg") no-repeat center;
+    text-align: center;
+    height: 76%;
+}
+
+.choose .wrapper{
+    color: #ebebeb;
+    padding-top: 3.8rem;
+    position: relative;
+    height: 100%;
+}
+
+.choose h1,.choose p{
+    color: #ebebeb;
+    
+}
+
+.choose h1{
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+.choose p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.choose img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
