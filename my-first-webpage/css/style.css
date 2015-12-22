@@ -350,3 +350,77 @@ nav ul{
     right: 0;
 }
 
+/******************************
+        clients slider
+******************************/
+.clients{
+    background: #333;
+    text-align: center;
+    padding: 4rem 0 0;
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+}
+
+.clients .wrapper{
+    width: 100%;
+    height: 60%;
+}
+
+.clients a {
+    font-weight: 700;
+    color: #0FCABF;
+    text-transform: uppercase;
+}
+
+.clients img{
+    border-radius: 50%;
+    margin: .4rem;
+}
+
+.clients a{
+    display: block;
+    margin-left: 2px;
+}
+
+.clients p, .clients a{
+    text-align: left;
+}
+
+#carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem auto 0;
+    background: #333;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+input[id^="slide-"]{
+    visibility: hidden;
+}
+
+input[id^="slide-"]:checked + .slider{
+    left: 0;
+    z-index: 1000;
+}
+
+.checked-label img{
+    border: .4rem solid #0FCABF;
+}
+/******************************
+            INFO2
+******************************/
+
+.info2{
+    text-align: center;
+}
